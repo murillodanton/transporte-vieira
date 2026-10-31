@@ -1,0 +1,26 @@
+{
+  "name": "transporte-vieira",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "node scripts/run.mjs dev",
+    "build": "node scripts/run.mjs build",
+    "start": "node scripts/run.mjs start",
+    "typecheck": "node scripts/run.mjs typecheck",
+    "test": "node scripts/run.mjs test",
+    "test:http": "node scripts/run.mjs test:http",
+    "setup": "node scripts/run.mjs setup",
+    "backup": "node scripts/run.mjs backup",
+    "format": "prettier --write apps packages scripts README.md package.json .prettierrc.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
